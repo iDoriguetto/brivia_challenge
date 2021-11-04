@@ -3,7 +3,8 @@
 ### A landing page deve ser desenvolvida de acordo com os itens abaixo:
 
 -> Desenvolver em HTML5, html deve ser semântico com as boas práticas de SEO; 
-Utilizar Sass/Scss para css;
+
+->Utilizar Sass/Scss para css;
 
 -> Utilizar Bootstrap Grid 4 ou superior como framework CSS;
 
