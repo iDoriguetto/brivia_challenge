@@ -1,0 +1,61 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+$imagesPath : "../../images";
+
+.intro-section{
+  background-image: url('#{$imagesPath}/slider2.png');
+  background-repeat: no-repeat;
+  background-size: cover ;
+  padding: 3rem 0 0 0;
+  width: 100%;
+  height: 100%;
+
+  @include for_breakpoint(custom_max768) {
+    padding: 5rem 0;
+  }
+
+  & .form-slider {
+    background: $orange-dark-opactity;
+    padding: 100px 30px;
+  }
+
+  .form-group {
+    padding-bottom: 15px;
+  }
+
+  .btn-block {
+    width: 100%;
+  }
+
+  .intros.dp {
+    padding-left: 100px;
+    @include for_breakpoint(custom_max768) {
+      padding-left: 0;
+    }
+
+    h1:nth-child(1) {
+      @include for_breakpoint(custom_max768) {
+        padding-bottom: 50%;
+      }
+    }
+  }
+
+  .intros.form-slider {
+    @include for_breakpoint(custom_max768) {
+      display: none;
+    }
+  }
+
+  .btn-intro-slider{
+    display: none;
+    @include for_breakpoint(custom_max768) {
+      display: block;
+    }
+  }
+
+  .text-form{
+    text-align: center;
+    padding: 20px;
+  }
+
+}

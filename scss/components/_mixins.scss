@@ -1,0 +1,37 @@
+@use '../custom' as *;
+
+// GRADIENT MIXIN
+@mixin gradient {
+  background: linear-gradient(to right, rgba($orange-light, 0.95), rgba($orange-dark, 0.95));
+}
+
+// RESPONSIVE
+$media_queries: (
+        'mobile' : unquote("only screen and (max-width: 480px)"),
+        'iPads' : unquote("only screen  and (max-width: 768px)"),
+        'Desktops1' : unquote("only screen and (max-width: 1024px)"),
+        'Desktops2' : unquote("only screen and (max-width: 1200px)"),
+        'Desktops3' : unquote("only screen and (min-width: 1201)"),
+
+        'landscape' : unquote("screen and (orientation:landscape) "),
+        'portrait' : unquote("screen and (orientation:portrait) "),
+
+        'custom_max991' : unquote("only screen and (max-width: 991px)"),
+        'custom_max768' : unquote("only screen and (max-width: 768px)"),
+);
+
+@mixin for_breakpoint($breakpoints) {
+  $conditions: ();
+  @each $breakpoint in $breakpoints {
+    $conditions: append(
+                    $conditions,
+                    #{inspect(map-get($media_queries, $breakpoint))},
+                    comma
+    );
+  }
+
+  @media #{$conditions} {
+    @content;
+  }
+
+}

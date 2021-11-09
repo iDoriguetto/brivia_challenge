@@ -3,6 +3,8 @@ $orange-dark: #EB4826;
 $orange-light: #ED6F2E;
 $black-gray: #454545;
 
+$orange-dark-opactity: rgba(237,111,46,0.8);
+
 // WHITE AND GRAY COLORS
 $white:    #fff;
 $gray-100: #f8f9fa;
@@ -16,7 +18,7 @@ $gray-800: #343a40;
 $gray-900: #212529;
 $black:    #000;
 
-$primary: $orange-dark;
+$primary: $orange-light;
 $secondary: $black-gray;
 
 //IMPORT BOOTSTRAP

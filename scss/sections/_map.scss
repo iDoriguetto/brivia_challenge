@@ -1,0 +1,54 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+$imagesPath : "../../images";
+
+#maps-top{
+  h3{
+    text-transform: uppercase;
+  }
+
+  h5{
+    color: $orange-light;
+    font-size: 32px;
+  }
+
+  p{
+    font-size: 16px;
+  }
+
+  .buttons-maps{
+    text-align: center;
+
+    .btn-primary{
+      margin-right: 12px;
+    }
+
+    @include for_breakpoint(custom_max991 portrait) {
+      text-align: initial;
+    }
+
+  }
+}
+
+#maps-bottom{
+  img{
+    width: 100%;
+    opacity: 0;
+  }
+
+  .bg-maps{
+    background-image: url('#{$imagesPath}/maps.png');
+    background-repeat: no-repeat;
+    background-size: cover ;
+
+    @include for_breakpoint(ipad portrait) {
+      background-size: auto;
+      background-position: center;
+    }
+  }
+
+  .row > *{
+    margin: 0;
+    padding: 0;
+  }
+}

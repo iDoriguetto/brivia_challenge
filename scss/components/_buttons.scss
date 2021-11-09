@@ -1,0 +1,20 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+button{
+  padding: 10px 20px;
+
+  span{
+    font-weight: 700;
+    font-size: 14px;
+    color: $white;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    @include gradient;
+    color: $white;
+  }
+}
+
+

@@ -1,0 +1,32 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.display-2{
+  margin: 10px;
+  text-transform: capitalize;
+  font-family: 'Lato', sans-serif;
+
+  @include for_breakpoint(custom_max768) {
+    text-align: center;
+  }
+
+  &--intro{
+    font-size: 45px;
+    display: inline-block;
+    font-weight: 700;
+  }
+
+  &--intro.n-capitalize{
+    text-transform: none !important;
+  }
+
+  &--description{
+    font-size: 14px;
+    display: block;
+  }
+
+  &--description.fw-700{
+    font-weight: 700;
+  }
+
+}

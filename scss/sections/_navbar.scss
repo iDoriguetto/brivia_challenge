@@ -1,0 +1,60 @@
+@use '../custom' as *;
+
+.navbar{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+nav {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  background-color: rgb(42 42 42 / 52%);
+
+  > .container > .row .col-md {
+    padding: 12px;
+  }
+  > div.container {
+    align-items: stretch !important;
+    flex-direction: column !important;
+  }
+
+  .bg-light{
+    background-color: rgb(255 255 255 / 12%) !important;
+  }
+
+  .d-flex{
+    margin: 10px 0 !important;
+  }
+
+  input.form-control.me-2 {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  a.search-btn {
+    img {
+      width: 15px;
+      margin: 10px 0;
+    }
+  }
+
+  a.menu-btn{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    img {
+      padding-right: 10px;
+      width: 40px;
+      margin: 20px 0;
+    }
+  }
+
+  .col-md-2.col-sm-2 {
+    text-align-last: center;
+  }
+
+}
+

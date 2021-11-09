@@ -1,0 +1,19 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.footer{
+  .logo-footer {
+    padding-bottom: 20px;
+  }
+
+  .footer-info-bottom{
+    display: inline-block;
+    padding: 45px 70px 45px 0;
+    font-size: 12px;
+    color: grey;
+
+    @include for_breakpoint(iPads) {
+      padding: 10px !important;
+    }
+  }
+}
