@@ -1,0 +1,65 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+$imagesPath : "../../images";
+
+.call-action-section {
+  padding: 4rem 0;
+  background-color: $gray-200;
+
+  .display-4{
+    font-size: 32px;
+    margin-bottom: 20px;
+
+    + p{
+      font-size: 14px;
+      text-align: justify;
+    }
+  }
+
+  .bg-img{
+    background-image: url('#{$imagesPath}/img2.png');
+    background-repeat: no-repeat;
+    background-size: cover ;
+    @include for_breakpoint(mobile portrait) {
+      padding: 200px !important;
+    }
+  }
+
+  .cta-info {
+    padding: 30px 69px;
+
+    .buttons-group{
+      @include for_breakpoint(mobile portrait) {
+        display: none;
+      }
+    }
+  }
+
+  button{
+    float: right;
+    @include for_breakpoint(mobile portrait) {
+      width: 100%;
+    }
+  }
+
+  .buttons-group{
+    text-align: center;
+    li{
+      color: $white;
+      &:hover {
+        color: $white;
+      }
+    }
+    img{
+      margin: 0 0 3px 0;
+    }
+
+  }
+
+  .col-7.col-lg-7.shadow.p-3{
+    padding-bottom: 30px  !important;
+  }
+
+}
+
+

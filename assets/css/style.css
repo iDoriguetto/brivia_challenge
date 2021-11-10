@@ -11119,7 +11119,7 @@ textarea.form-control-lg {
   }
 }
 button {
-  padding: 10px 20px;
+  padding: 3px 24px !important;
 }
 button span {
   font-weight: 700;
@@ -11130,6 +11130,9 @@ button span {
 button:hover {
   background: linear-gradient(to right, rgba(237, 111, 46, 0.95), rgba(235, 72, 38, 0.95));
   color: #fff;
+}
+button img {
+  margin: 0 0 3px 0;
 }
 
 .display-2 {
@@ -11258,6 +11261,60 @@ nav .col-md-2.col-sm-2 {
 .intro-section .text-form {
   text-align: center;
   padding: 20px;
+}
+
+.call-action-section {
+  padding: 4rem 0;
+  background-color: #e9ecef;
+}
+.call-action-section .display-4 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.call-action-section .display-4 + p {
+  font-size: 14px;
+  text-align: justify;
+}
+.call-action-section .bg-img {
+  background-image: url("../../images/img2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-width: 480px), screen and (orientation:portrait) {
+  .call-action-section .bg-img {
+    padding: 200px !important;
+  }
+}
+.call-action-section .cta-info {
+  padding: 30px 69px;
+}
+@media only screen and (max-width: 480px), screen and (orientation:portrait) {
+  .call-action-section .cta-info .buttons-group {
+    display: none;
+  }
+}
+.call-action-section button {
+  float: right;
+}
+@media only screen and (max-width: 480px), screen and (orientation:portrait) {
+  .call-action-section button {
+    width: 100%;
+  }
+}
+.call-action-section .buttons-group {
+  text-align: center;
+}
+.call-action-section .buttons-group li {
+  color: #fff;
+}
+.call-action-section .buttons-group li:hover {
+  color: #fff;
+}
+.call-action-section .buttons-group img {
+  margin: 0 0 3px 0;
+}
+.call-action-section .col-7.col-lg-7.shadow.p-3 {
+  padding-bottom: 30px !important;
 }
 
 #maps-top h3 {
