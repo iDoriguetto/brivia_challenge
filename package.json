@@ -4,7 +4,8 @@
   "description": "-> Desenvolver em HTML5, html deve ser semântico com as boas práticas de SEO;",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass --watch scss:assets/css"
+    "compile:sass": "sass --watch scss:assets/css",
+    "gulp": "gulp"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,9 @@
     "postcss-cli": "^9.0.2"
   },
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-minify": "^3.1.0",
     "sass": "^1.43.4"
   }
 }
