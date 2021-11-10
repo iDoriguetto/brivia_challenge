@@ -60,6 +60,13 @@ $imagesPath : "../../images";
     padding-bottom: 30px  !important;
   }
 
+  .buttons-group.outside{
+    display: none;
+    @include for_breakpoint(mobile portrait) {
+      display: block;
+    }
+  }
 }
+
 
 

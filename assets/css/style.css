@@ -11316,6 +11316,60 @@ nav .col-md-2.col-sm-2 {
 .call-action-section .col-7.col-lg-7.shadow.p-3 {
   padding-bottom: 30px !important;
 }
+.call-action-section .buttons-group.outside {
+  display: none;
+}
+@media only screen and (max-width: 480px), screen and (orientation:portrait) {
+  .call-action-section .buttons-group.outside {
+    display: block;
+  }
+}
+
+.about-section .c-text, .about-section .c-gallery {
+  padding: 60px 70px;
+}
+.about-section .c-gallery .row {
+  place-content: center;
+}
+.about-section .c-gallery h4 {
+  margin-top: 20px;
+}
+.about-section .c-gallery img {
+  width: 65%;
+  padding-top: 20px;
+}
+.about-section .c-service {
+  display: flex;
+}
+.about-section .c-service .service-icon {
+  padding-right: 13px;
+  width: 150px;
+}
+.about-section .c-service .service-icon.icon-5 {
+  padding: 0 !important;
+}
+.about-section .c-service .title {
+  font-size: 15px;
+}
+.about-section .c-service .description {
+  font-size: 12px;
+  color: #454545;
+  padding-right: 24px;
+}
+.about-section .outline {
+  padding: 10px 30px;
+  border: 1px solid #ED6F2E;
+  text-align: center;
+}
+.about-section .outline.fill {
+  background-color: #ED6F2E;
+}
+
+@media only screen and (max-width: 768px) {
+  #about > div > div {
+    flex-direction: column-reverse;
+  }
+}
 
 #maps-top h3 {
   text-transform: uppercase;
